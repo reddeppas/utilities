@@ -33,8 +33,13 @@ then
     echo 'upgrading from trusty to xenial'
     apt-get update
     apt-get dist-upgrade
-    apt-get install update-manager-core
-    do-release-upgrade
+    if [ ! $(which do-release-upgrade) ]
+    then
+        apt-get install update-manager-core
+        do-release-upgrade
+     else
+        do-release-upgrade
+     fi
     current_os="$(get_os_codename)"
     echo "Upgraded successfully...  Current OS CODE Name: $current_os"
 elif [ $current_os == 'xenial' ]
