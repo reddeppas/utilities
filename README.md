@@ -23,3 +23,10 @@
       * git diff
       * git diff --staged
       * git commit -m "[descrpitive message]"
+    git Branch and Merge
+      * git branch
+      * git branch [branch-name]
+      * git checkout
+      * git merge [branch]
+      * git log
+     
