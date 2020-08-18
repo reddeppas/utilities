@@ -39,4 +39,12 @@
       * git rm [file]
       * git mv [existing-path] [new-path]
       * git log --stat -M
+    git rewrite history
+      * git rebase [branch]
+      * git reset --hard [commit]
+    git Temporary Commits
+      * git stash
+      * git stash list
+      * git stash pop
+      * git stash drop
   
