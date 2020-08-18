@@ -1,0 +1,17 @@
+#!/bin/bash
+
+JQ=$(which jq)
+
+if [ "x$JQ" == "x" ]; then
+  echo "You must install JQ to verify JSON validity. On OSX this is just 'brew install jq'."
+  exit 1
+fi
+
+jq . $1 > /dev/null
+if [ $? == 0 ]; then
+  # echo "$1 passed JSON validation"
+  exit 0
+else
+  echo "$1 failed JSON validation"
+  exit 1
+fi
