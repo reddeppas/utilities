@@ -29,10 +29,14 @@
       * git checkout
       * git merge [branch]
       * git log
-     
     git Share and Update
       * git remote add [alias] [url]
       * git fetch [alias]
       * git merge [alias]/[branch]
       * git push [alias] [branch]
       * git pull
+    git Tracking path changes
+      * git rm [file]
+      * git mv [existing-path] [new-path]
+      * git log --stat -M
+  
