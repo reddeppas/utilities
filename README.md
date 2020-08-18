@@ -16,4 +16,10 @@
       * git config --global color.ui auto
       * git init
       * git clone [url]
-     
+     git Stage and Snapshot
+      * git status
+      * git add [file]
+      * git reset [file]
+      * git diff
+      * git diff --staged
+      * git commit -m "[descrpitive message]"
