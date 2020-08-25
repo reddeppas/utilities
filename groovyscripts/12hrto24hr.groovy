@@ -12,3 +12,4 @@ String time1 = date24Format.format(date12Format.parse(time));
 System.out.println(time1)
 
 
+System.out.println(date24Format.format(date12Format.parse(time)));
